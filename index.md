@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="README.md"><b>Home</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="index.md"><b>Home</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="research.md"><b>Research</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="events.md" style="text-decoration: none;"><b>Events</b></a>
 </p>
