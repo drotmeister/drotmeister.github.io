@@ -9,7 +9,7 @@
 <img align="left" width="400" src="danielphoto2026.jpeg" style="margin-right: 30px;">
 
 <h3>About me</h3>
-<font size="5"> Currently, I am a PhD student at <a href="https://www.ime.usp.br/">Universidade de São Paulo</a> (IME-USP), Brasil, under the supervision of <a href="https://www.ime.usp.br/~gorodski/">Claudio Gorodski</a>. I did both bachelor's degree in Mathematics and Physics, as well as a master's degree in Mathematics, at <a href="https://www2.ufjf.br/ufjf/">Universidade Federal de Juiz de Fora</a> (UFJF), Brasil.</font>
+Currently, I am a PhD student at <a href="https://www.ime.usp.br/">Universidade de São Paulo</a> (IME-USP), Brasil, under the supervision of <a href="https://www.ime.usp.br/~gorodski/">Claudio Gorodski</a>. I did both bachelor's degree in Mathematics and Physics, as well as a master's degree in Mathematics, at <a href="https://www2.ufjf.br/ufjf/">Universidade Federal de Juiz de Fora</a> (UFJF), Brasil.
 <br>
 <br>
 <br>
