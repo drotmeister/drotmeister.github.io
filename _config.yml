@@ -1,3 +1,4 @@
 title: ""
 description: ""
-theme: 
+exclude:
+  - README.md
