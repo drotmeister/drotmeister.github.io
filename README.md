@@ -1,5 +1,3 @@
-<h1 align="center"></h1>
-
 ### About me 
 Currently, I am a PhD student at [Universidade de São Paulo](https://www.ime.usp.br/) (IME-USP), Brasil, under the supervision of [Claudio Gorodski](https://www.ime.usp.br/~gorodski/). I did both bachelor's degree in Mathematics and Physics, as well as a master's degree in Mathematics, at [Universidade Federal de Juiz de Fora](https://www2.ufjf.br/ufjf/) (UFJF), Brasil. 
 ### Research interests
