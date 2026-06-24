@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="README.md"><b>Home</b></a> &nbsp;&nbsp;│&nbsp;&nbsp;
+  <a href="research.md"><b>Research</b></a> &nbsp;&nbsp;│&nbsp;&nbsp;
+</p>
+
+---
+--
+
 <img align="left" width="400" src="danielphoto2026.jpeg" style="margin-right: 20px;">
 
 ### About me 
