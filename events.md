@@ -4,6 +4,6 @@
   <a href="events.md"><b>Events</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-### Academic visits
+<h3>Academic visits</h3>
 
-### Events
+<h3>Events</h3>
