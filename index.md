@@ -1,7 +1,7 @@
 <p align="center">
-  <a href="/">Home</a> •
-  <a href="research">Research</a> •
-  <a href="events">Events</a>
+  <a href="/" style="text-decoration: none;">Home</a> •
+  <a href="research style="text-decoration: none;">Research</a> •
+  <a href="events style="text-decoration: none;">Events</a>
 </p>
 
 <br>
