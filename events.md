@@ -1,7 +1,3 @@
----
-layout: default
-title: Página Inicial
----
 <h2>Academic visits</h2>
 <ul style="list-style-type: square;">
   <li><a href="https://scholar.google.com/citations?user=nCYpB2oAAAAJ&hl=en">Edison A. Fernández-Culma</a> at Universidad Nacional de Córdoba in Córdoba, Argentina, april 2026.</li>
