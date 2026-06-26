@@ -5,7 +5,6 @@ Currently, I am a PhD student at <a href="https://www.ime.usp.br/">Universidade 
 <br>
 <br>
 <br>
-<br>
 <h2>Research interests</h2>
 I am interested in Differential Geometry and Geometric Analysis, with a specific focus on invariant objects on Lie groups and homogeneous spaces, as well as geometric flows and their solitons in both Riemannian and special geometries, such as $G_2$-structures.
 <h2>Contact information</h2>
