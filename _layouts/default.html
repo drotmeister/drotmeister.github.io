@@ -1,130 +1,106 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      color: #222;
+    }
 
-<meta charset="UTF-8">
+    /* Faixa superior horizontal cinza com o nome centralizado */
+    .top-banner {
+      background-color: #555555;
+      color: #ffffff;
+      text-align: center;
+      padding: 22px 20px;
+    }
 
-<title>{{ page.title }}</title>
+    .top-banner h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      border-bottom: none !important;
+    }
 
-<style>
+    /* Barra das seções logo abaixo, centralizada e com linha divisória */
+    .nav-bar {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: center;
+      padding: 14px 20px;
+      margin-bottom: 40px;
+    }
 
-body {
+    .nav-bar a {
+      color: #333333;
+      text-decoration: none;
+      margin: 0 18px;
+      display: inline-block;
+      font-size: 1.1em;
+      font-weight: normal !important;
+      border-bottom: none !important;
+    }
 
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    .nav-bar a:hover {
+      color: #000000;
+      text-decoration: underline;
+    }
 
-line-height: 1.6;
+    /* Conteúdo principal mantido em 800px centralizado */
+    main {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+    }
 
-max-width: 800px;
+    main a {
+      color: #0366d6;
+      text-decoration: none;
+    }
 
-margin: 40px auto;
+    main a:hover {
+      text-decoration: underline;
+    }
 
-padding: 0 20px;
-
-font-size: 16px;
-
-}
-
-
-
-a {
-
-color: #0366d6;
-
-text-decoration: none;
-
-}
-
-
-/* ESTA É A NOVA REGRA QUE ADICIONOU */
-
-header a {
-
-margin: 0 15px;
-
-display: inline-block;
-
-font-size: 1.25em; /* <-- Esta linha aumenta o tamanho da letra */
-
-border-bottom: none !important; /* Esconde COMPLETAMENTE a linha cinza */
-
-font-weight: normal !important; /* Forces standard weight, removing theme bold */
-
-}
-
-
-
-a:hover {
-
-text-decoration: underline;
-
-}
-
-
-
-header {
-
-margin-bottom: 40px;
-
-padding-bottom: 20px;
-
-}
-
-h1, h2 {
-
-border-bottom: none !important; /* Remove a linha de todos os H2 */
-
-}
-
-</style>
-
-<script>
-
-window.MathJax = {
-
-tex: {
-
-inlineMath: [['$', '$'], ['\\(', '\\)']],
-
-displayMath: [['$$', '$$'], ['\\[', '\\]']],
-
-processEscapes: true
-
-}
-
-};
-
-</script>
-
-<script id="MathJax-script" async
-
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-
-</script>
-
+    h1, h2 {
+      border-bottom: none !important;
+    }
+  </style>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      }
+    };
+  </script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
-
 <body>
 
+  <header>
+    <div class="top-banner">
+      <h1>Daniel Rotmeister</h1>
+    </div>
 
+    <div class="nav-bar">
+      {% include nav.html %}
+    </div>
+  </header>
 
-<header>
-
-{% include nav.html %}
-
-</header>
-
-
-
-<main>
-
-{{ content }}
-
-</main>
-
-
+  <main>
+    {{ content }}
+  </main>
 
 </body>
-
-</html> 
+</html>
