@@ -15,11 +15,28 @@
 
     /* Faixa única cinza escuro (quase preto) cobrindo nome e seções */
     header {
+      position: relative;
       background-color: #222222;
       color: #ffffff;
       text-align: center;
       padding: 28px 20px 20px;
       margin-bottom: 40px;
+    }
+
+    /* Diagrama de Dynkin Dn no canto esquerdo da faixa */
+    .dynkin-dn {
+      position: absolute;
+      left: 28px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.9;
+    }
+
+    /* Esconde no celular para não sobrepor o nome */
+    @media (max-width: 750px) {
+      .dynkin-dn {
+        display: none;
+      }
     }
 
     header h1 {
@@ -84,6 +101,25 @@
 <body>
 
   <header>
+    <svg class="dynkin-dn" width="135" height="50" viewBox="0 0 150 56" xmlns="http://www.w3.org/2000/svg" aria-label="Dynkin diagram Dn">
+      <!-- Nós -->
+      <circle cx="14" cy="28" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="50" cy="28" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="102" cy="28" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="134" cy="10" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="134" cy="46" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+
+      <!-- Arestas -->
+      <line x1="19" y1="28" x2="45" y2="28" stroke="#ffffff" stroke-width="2"/>
+      <line x1="106.35" y1="25.55" x2="129.65" y2="12.45" stroke="#ffffff" stroke-width="2"/>
+      <line x1="106.35" y1="30.45" x2="129.65" y2="43.55" stroke="#ffffff" stroke-width="2"/>
+
+      <!-- Reticências (...) -->
+      <circle cx="66" cy="28" r="1.7" fill="#ffffff"/>
+      <circle cx="76" cy="28" r="1.7" fill="#ffffff"/>
+      <circle cx="86" cy="28" r="1.7" fill="#ffffff"/>
+    </svg>
+
     <h1>Daniel Rotmeister</h1>
     <div class="nav-bar">
       {% include nav.html %}
