@@ -23,18 +23,28 @@
       margin-bottom: 40px;
     }
 
-    /* Diagrama de Dynkin Dn no canto esquerdo da faixa */
-    .dynkin-dn {
+    /* Grupos dos diagramas de Dynkin nas laterais */
+    .dynkin-group {
       position: absolute;
-      left: 28px;
       top: 50%;
       transform: translateY(-50%);
-      opacity: 0.9;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      opacity: 0.88;
     }
 
-    /* Esconde no celular para não sobrepor o nome */
-    @media (max-width: 750px) {
-      .dynkin-dn {
+    .dynkin-left {
+      left: 28px;
+    }
+
+    .dynkin-right {
+      right: 28px;
+    }
+
+    /* Esconde em telas menores para não sobrepor o nome ou o menu */
+    @media (max-width: 880px) {
+      .dynkin-group {
         display: none;
       }
     }
@@ -101,28 +111,73 @@
 <body>
 
   <header>
-    <svg class="dynkin-dn" width="135" height="50" viewBox="0 0 150 56" xmlns="http://www.w3.org/2000/svg" aria-label="Dynkin diagram Dn">
-      <!-- Nós -->
-      <circle cx="14" cy="28" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
-      <circle cx="50" cy="28" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
-      <circle cx="102" cy="28" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
-      <circle cx="134" cy="10" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
-      <circle cx="134" cy="46" r="5" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <!-- Esquerda: An e Bn -->
+    <div class="dynkin-group dynkin-left">
+      <!-- Diagrama An -->
+      <svg width="120" height="20" viewBox="0 0 150 24" xmlns="http://www.w3.org/2000/svg" aria-label="Dynkin diagram An">
+        <circle cx="10" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="14.5" y1="12" x2="35.5" y2="12" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="40" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="58" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="68" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="78" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="96" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="100.5" y1="12" x2="129.5" y2="12" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="134" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+      </svg>
 
-      <!-- Arestas -->
-      <line x1="19" y1="28" x2="45" y2="28" stroke="#ffffff" stroke-width="2"/>
-      <line x1="106.35" y1="25.55" x2="129.65" y2="12.45" stroke="#ffffff" stroke-width="2"/>
-      <line x1="106.35" y1="30.45" x2="129.65" y2="43.55" stroke="#ffffff" stroke-width="2"/>
-
-      <!-- Reticências (...) -->
-      <circle cx="66" cy="28" r="1.7" fill="#ffffff"/>
-      <circle cx="76" cy="28" r="1.7" fill="#ffffff"/>
-      <circle cx="86" cy="28" r="1.7" fill="#ffffff"/>
-    </svg>
+      <!-- Diagrama Bn -->
+      <svg width="120" height="20" viewBox="0 0 150 24" xmlns="http://www.w3.org/2000/svg" aria-label="Dynkin diagram Bn">
+        <circle cx="10" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="14.5" y1="12" x2="35.5" y2="12" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="40" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="58" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="68" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="78" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="96" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="100" y1="10" x2="130" y2="10" stroke="#ffffff" stroke-width="1.6"/>
+        <line x1="100" y1="14" x2="130" y2="14" stroke="#ffffff" stroke-width="1.6"/>
+        <polyline points="111,6.5 119,12 111,17.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="134" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+      </svg>
+    </div>
 
     <h1>Daniel Rotmeister</h1>
     <div class="nav-bar">
       {% include nav.html %}
+    </div>
+
+    <!-- Direita: Cn e Dn -->
+    <div class="dynkin-group dynkin-right">
+      <!-- Diagrama Cn -->
+      <svg width="120" height="20" viewBox="0 0 150 24" xmlns="http://www.w3.org/2000/svg" aria-label="Dynkin diagram Cn">
+        <circle cx="10" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="14.5" y1="12" x2="35.5" y2="12" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="40" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="58" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="68" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="78" cy="12" r="1.5" fill="#ffffff"/>
+        <circle cx="96" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="100" y1="10" x2="130" y2="10" stroke="#ffffff" stroke-width="1.6"/>
+        <line x1="100" y1="14" x2="130" y2="14" stroke="#ffffff" stroke-width="1.6"/>
+        <polyline points="119,6.5 111,12 119,17.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="134" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+      </svg>
+
+      <!-- Diagrama Dn -->
+      <svg width="120" height="35" viewBox="0 0 150 44" xmlns="http://www.w3.org/2000/svg" aria-label="Dynkin diagram Dn">
+        <circle cx="10" cy="22" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="14.5" y1="22" x2="35.5" y2="22" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="40" cy="22" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="58" cy="22" r="1.5" fill="#ffffff"/>
+        <circle cx="68" cy="22" r="1.5" fill="#ffffff"/>
+        <circle cx="78" cy="22" r="1.5" fill="#ffffff"/>
+        <circle cx="96" cy="22" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="100.16" y1="20.29" x2="125.84" y2="9.71" stroke="#ffffff" stroke-width="1.8"/>
+        <line x1="100.16" y1="23.71" x2="125.84" y2="34.29" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="130" cy="8" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+        <circle cx="130" cy="36" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+      </svg>
     </div>
   </header>
 
