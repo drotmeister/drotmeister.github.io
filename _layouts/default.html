@@ -13,43 +13,38 @@
       color: #222;
     }
 
-    /* Faixa superior horizontal cinza com o nome centralizado */
-    .top-banner {
-      background-color: #555555;
+    /* Faixa única cinza escuro (quase preto) cobrindo nome e seções */
+    header {
+      background-color: #222222;
       color: #ffffff;
       text-align: center;
-      padding: 22px 20px;
-    }
-
-    .top-banner h1 {
-      margin: 0;
-      font-size: 1.8rem;
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      border-bottom: none !important;
-    }
-
-    /* Barra das seções logo abaixo, centralizada e com linha divisória */
-    .nav-bar {
-      background-color: #ffffff;
-      border-bottom: 1px solid #e0e0e0;
-      text-align: center;
-      padding: 14px 20px;
+      padding: 28px 20px 20px;
       margin-bottom: 40px;
     }
 
-    .nav-bar a {
-      color: #333333;
-      text-decoration: none;
-      margin: 0 18px;
-      display: inline-block;
-      font-size: 1.1em;
-      font-weight: normal !important;
+    header h1 {
+      margin: 0 0 16px;
+      font-size: 1.9rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      color: #ffffff;
       border-bottom: none !important;
     }
 
+    /* Links das seções dentro da mesma faixa escura */
+    .nav-bar a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      margin: 0 18px;
+      display: inline-block;
+      font-size: 1.05em;
+      font-weight: normal !important;
+      border-bottom: none !important;
+      transition: color 0.2s;
+    }
+
     .nav-bar a:hover {
-      color: #000000;
+      color: #ffffff;
       text-decoration: underline;
     }
 
@@ -89,10 +84,7 @@
 <body>
 
   <header>
-    <div class="top-banner">
-      <h1>Daniel Rotmeister</h1>
-    </div>
-
+    <h1>Daniel Rotmeister</h1>
     <div class="nav-bar">
       {% include nav.html %}
     </div>
